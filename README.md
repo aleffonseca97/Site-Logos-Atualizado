@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Logos Agency — Website
 
-## Getting Started
+Website istituzionale editoriale per Logos Agency, con portfolio dinamico e pannello admin.
 
-First, run the development server:
+## Stack
+
+- Next.js (App Router) + TypeScript + Tailwind CSS
+- Prisma + SQLite (persistente in locale; sostituibile con Postgres)
+- Upload file in `public/uploads`
+- Auth admin con cookie HTTP-only (JWT via `jose`)
+
+## Setup
 
 ```bash
+npm install
+cp .env.example .env
+npm run db:setup
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Apri:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Sito: [http://localhost:3000](http://localhost:3000)
+- Admin: [http://localhost:3000/admin](http://localhost:3000/admin)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Credenziali iniziali (da `.env`):
 
-## Learn More
+- `ADMIN_EMAIL`
+- `ADMIN_PASSWORD`
 
-To learn more about Next.js, take a look at the following resources:
+**Cambia subito la password** in produzione.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Variabili d’ambiente
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Variabile | Descrizione |
+|---|---|
+| `DATABASE_URL` | Default `file:./dev.db` (SQLite in `prisma/`) |
+| `AUTH_SECRET` | Segreto JWT (lungo e casuale in produzione) |
+| `ADMIN_EMAIL` / `ADMIN_PASSWORD` | Primo amministratore (seed) |
+| `CONTACT_EMAIL` | Email mostrata / di contatto |
+| `NEXT_PUBLIC_SITE_URL` | URL pubblico del sito |
+| `NEXT_PUBLIC_WHATSAPP` | Opzionale, solo cifre con prefisso paese |
 
-## Deploy on Vercel
+## Flusso operativo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Accedi a `/admin`
+2. Crea **clienti** e carica i loghi reali
+3. Attiva `Mostra nella fascia loghi` per la marquee
+4. Crea **progetti**, carica cover/gallery, pubblica
+5. Configura email, WhatsApp, social e dati legali in **Impostazioni**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+I progetti in bozza non compaiono sul sito pubblico. Quelli pubblicati alimentano home, portfolio e pagine `/progetti/[slug]`.
+
+## Note
+
+- Non sono stati inventati loghi clienti né immagini di lavori: i 4 stub iniziali restano in **draft** finché non carichi i contenuti reali.
+- Per Postgres: aggiorna `DATABASE_URL` e `provider` in `prisma/schema.prisma`, poi `npm run db:push`.
+- Gli upload restano in `public/uploads` (persistenti sul filesystem del server).
