@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { useI18n } from "@/i18n/I18nProvider";
 
 type ClientItem = {
@@ -19,22 +18,20 @@ export function ClientMarquee({
   autoplay?: boolean;
 }) {
   const { t } = useI18n();
-  const [reduce, setReduce] = useState(false);
-
-  useEffect(() => {
-    setReduce(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
-  }, []);
 
   if (!clients.length) return null;
 
-  const shouldAnimate = autoplay && !reduce && clients.length >= 4;
-  const loop = shouldAnimate ? [...clients, ...clients] : clients;
+  const shouldAnimate = autoplay;
+  const repeats = shouldAnimate ? Math.max(2, Math.ceil(10 / clients.length)) : 1;
+  const sequence = Array.from({ length: repeats }, () => clients).flat();
+  const loop = shouldAnimate ? [...sequence, ...sequence] : clients;
 
   return (
-    <section className="border-y border-white/10 bg-black py-8 md:py-10" aria-label={t.marquee.label}>
+    <section className="border-y border-white/10 bg-black py-7 md:py-8" aria-label={t.marquee.label}>
       <div className={`marquee ${shouldAnimate ? "" : "marquee-static"}`}>
         <ul
-          className="marquee-track list-none px-[var(--page-x)]"
+          className="marquee-track list-none"
+          style={shouldAnimate ? { animationDuration: `${Math.max(sequence.length * 5, 32)}s` } : undefined}
           aria-hidden={shouldAnimate ? true : undefined}
         >
           {loop.map((client, index) => {
@@ -44,9 +41,9 @@ export function ClientMarquee({
                   <Image
                     src={client.logoUrl}
                     alt=""
-                    width={160}
-                    height={48}
-                    className="h-8 w-auto object-contain opacity-80 md:h-10"
+                    width={240}
+                    height={80}
+                    className="h-14 w-auto max-w-[15rem] object-contain opacity-90 md:h-20 md:max-w-[18rem]"
                   />
                 ) : (
                   <span className="text-sm uppercase tracking-[0.18em] text-white/55">

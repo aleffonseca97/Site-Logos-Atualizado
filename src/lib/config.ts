@@ -21,12 +21,12 @@ export const navItems = [
 export type NavKey = (typeof navItems)[number]["key"];
 
 export const services = [
-  { id: "web-design", number: "01", image: "/services/web-design.jpg" },
+  { id: "web-design", number: "01", image: "/services/web-design.png" },
   { id: "ecommerce", number: "02", image: "/services/ecommerce.jpg" },
-  { id: "software", number: "03", image: "/services/software.jpg" },
+  { id: "software", number: "03", image: "/services/software.png" },
   { id: "crm", number: "04", image: "/services/crm.jpg" },
   { id: "saas", number: "05", image: "/services/saas.jpg" },
-  { id: "api", number: "06", image: "/services/api.jpg" },
+  { id: "api", number: "06", image: "/services/api.png" },
 ] as const;
 
 export type ServiceId = (typeof services)[number]["id"];

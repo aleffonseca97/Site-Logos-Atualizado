@@ -1,13 +1,18 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/Button";
-import { Highlight } from "@/components/ui/Highlight";
 import { useI18n, usePageMeta } from "@/i18n/I18nProvider";
+
+const DESKTOP_VIDEO = "/media/logos_agency_desktop.mp4";
+const MOBILE_VIDEO = "/media/logos_agency_mobile.mp4";
+const DESKTOP_POSTER = "/media/logos_agency_desktop.jpg";
+const MOBILE_POSTER = "/media/logos_agency_mobile.jpg";
 
 export function Hero() {
   const { t } = useI18n();
   const [ready, setReady] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
   usePageMeta(t.meta.siteTitle, t.meta.description);
 
   useEffect(() => {
@@ -20,10 +25,70 @@ export function Hero() {
     return () => window.cancelAnimationFrame(id);
   }, []);
 
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const desktopQuery = window.matchMedia("(min-width: 768px)");
+    let activeSrc = "";
+
+    const play = () => {
+      video.muted = true;
+      video.defaultMuted = true;
+      video.loop = true;
+      video.playsInline = true;
+      const attempt = video.play();
+      if (attempt) attempt.catch(() => {});
+    };
+
+    const sync = () => {
+      const desktop = desktopQuery.matches;
+      const nextSrc = desktop ? DESKTOP_VIDEO : MOBILE_VIDEO;
+      video.poster = desktop ? DESKTOP_POSTER : MOBILE_POSTER;
+      if (activeSrc !== nextSrc) {
+        activeSrc = nextSrc;
+        video.preload = "auto";
+        video.src = nextSrc;
+      }
+      play();
+    };
+
+    const onEnded = () => {
+      video.currentTime = 0;
+      play();
+    };
+
+    video.addEventListener("ended", onEnded);
+    desktopQuery.addEventListener("change", sync);
+    sync();
+    return () => {
+      video.removeEventListener("ended", onEnded);
+      desktopQuery.removeEventListener("change", sync);
+    };
+  }, []);
+
   return (
     <section className="relative overflow-hidden bg-black pb-16 pt-28 md:pb-24 md:pt-36">
+      <div className="pointer-events-none absolute inset-0 z-0" aria-hidden>
+        <picture>
+          <source media="(min-width: 768px)" srcSet={DESKTOP_POSTER} />
+          <img src={MOBILE_POSTER} alt="" className="hero-vinheta-media" />
+        </picture>
+        <video
+          ref={videoRef}
+          className="hero-vinheta-media hero-vinheta-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          disablePictureInPicture
+        />
+        <div className="hero-vinheta-shade" />
+      </div>
+
       <div
-        className="pointer-events-none absolute -right-10 top-28 hidden h-56 w-56 opacity-40 md:block"
+        className="pointer-events-none absolute -right-10 top-28 z-[1] hidden h-56 w-56 opacity-40 md:block"
         aria-hidden
       >
         <svg viewBox="0 0 200 200" className="h-full w-full">
@@ -43,37 +108,37 @@ export function Hero() {
         </svg>
       </div>
 
-      <div className="container-wide px-[var(--page-x)]">
-        <h1 className="display display-xl max-w-[18ch]">
-          <span className={`hero-line ${ready ? "is-in" : ""}`} style={{ transitionDelay: "0ms" }}>
+      <div className="container-wide relative z-10 px-[var(--page-x)]">
+        <h1 className="display display-hero mx-auto text-center text-white">
+          <span className={`hero-line hero-title-line ${ready ? "is-in" : ""}`} style={{ transitionDelay: "0ms" }}>
             {t.hero.line1}
           </span>
           <span
-            className={`hero-line mt-2 block ${ready ? "is-in" : ""}`}
-            style={{ transitionDelay: "100ms" }}
+            className={`hero-line hero-title-line ${ready ? "is-in" : ""}`}
+            style={{ transitionDelay: "120ms" }}
           >
-            <Highlight>{t.hero.line2}</Highlight>
-          </span>
-          <span
-            className={`hero-line mt-2 block ${ready ? "is-in" : ""}`}
-            style={{ transitionDelay: "200ms" }}
-          >
-            {t.hero.line3}
+            {t.hero.line2}
           </span>
         </h1>
 
         <p
-          className={`hero-line mt-8 max-w-xl text-base text-white/75 md:text-lg ${ready ? "is-in" : ""}`}
+          className={`hero-line mx-auto mt-8 max-w-xl text-center text-base text-white/75 md:text-lg ${ready ? "is-in" : ""}`}
           style={{ transitionDelay: "300ms" }}
         >
           {t.hero.text}
         </p>
 
         <div
-          className={`hero-line mt-10 flex flex-col gap-3 sm:flex-row sm:items-center ${ready ? "is-in" : ""}`}
-          style={{ transitionDelay: "400ms" }}
+          className={`hero-line hero-actions mt-10 ${ready ? "is-in" : ""}`}
+          style={{
+            transitionDelay: "400ms",
+            display: "flex",
+            flexWrap: "wrap",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "0.75rem",
+          }}
         >
-          <Button href="/#servizi">{t.hero.services}</Button>
           <Button href="/progetti" variant="ghost">
             {t.hero.projects}
           </Button>

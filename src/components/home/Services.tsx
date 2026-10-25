@@ -17,9 +17,13 @@ export function Services() {
     <section id="servizi" className="section bg-black">
       <div className="container-wide">
         <Reveal>
-          <h2 className="display display-lg max-w-[16ch]">
-            {t.servicesSection.title} <Highlight tone="cyan">{t.servicesSection.highlight}</Highlight>
+          <h2 className="display display-lg max-w-[18ch]">
+            {t.servicesSection.title}{" "}
+            <Highlight tone="cyan">{t.servicesSection.highlight}</Highlight>
           </h2>
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/70 md:text-lg">
+            {t.servicesSection.text}
+          </p>
         </Reveal>
 
         <div className="mt-14 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
@@ -53,13 +57,13 @@ export function Services() {
               <p className="text-xs uppercase tracking-[0.2em] text-white/40">{current.number}</p>
               <h3 className="display display-sm mt-4">{copy.title}</h3>
               <p className="mt-5 text-base leading-relaxed text-white/70">{copy.description}</p>
-              <div className="image-mask relative mt-10 aspect-[4/3] overflow-hidden rounded-2xl bg-[#111]">
+              <div className="image-mask relative mt-10 aspect-[16/9] overflow-hidden rounded-2xl bg-[#111]">
                 <Image
                   key={current.id}
                   src={current.image}
                   alt={copy.imageAlt}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(max-width: 1024px) 100vw, 42vw"
                 />
               </div>

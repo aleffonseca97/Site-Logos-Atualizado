@@ -30,53 +30,53 @@ export const ptBR = {
     whatsapp: "WhatsApp",
   },
   hero: {
-    line1: "Estratégia.",
-    line2: "Design.",
-    line3: "Desenvolvimento.",
-    text: "Criamos experiências digitais sob medida para transformar ideias em produtos concretos.",
+    line1: "Seu sucesso, é a nossa",
+    line2: "arquitetura.",
+    text: "Código limpo, resultados claros.",
     services: "Conheça nossos serviços",
     projects: "Ver os projetos",
   },
   servicesSection: {
-    title: "O digital,",
-    highlight: "sem concessões.",
+    title: "Criamos software que não apenas funciona,",
+    highlight: "mas evolui com você.",
+    text: "Projetamos e desenvolvemos soluções digitais que unem identidade visual, tecnologia e funcionalidade. Cada projeto é construído em torno de objetivos concretos, pessoas reais e possibilidade de crescimento.",
   },
   services: {
     "web-design": {
       title: "Web Design e Landing Page",
       description:
         "Interfaces editoriais e landing pages de alta conversão, construídas em torno da marca e dos objetivos de negócio.",
-      imageAlt: "Mesa editorial com laptop, grades de layout e um destaque ciano",
+      imageAlt: "Landing page azul com menu, título e ondas luminosas",
     },
     ecommerce: {
       title: "E-commerce",
       description:
         "Lojas online de alto desempenho, com UX clara, checkout confiável e integrações de catálogo, pagamentos e logística.",
-      imageAlt: "Unboxing de um produto em uma caixa preta ao lado de um celular com o catálogo",
+      imageAlt: "Carrinho de compras em miniatura sobre um teclado, com uma loja online no monitor",
     },
     software: {
       title: "Software e Web App",
       description:
         "Aplicações web sob medida para processos internos ou produtos digitais, com arquiteturas escaláveis e interfaces cuidadas.",
-      imageAlt: "Dois monitores com interfaces escuras sobre uma mesa de vidro ao pôr do sol",
+      imageAlt: "Ilustração comparando aplicações web e um site",
     },
     crm: {
       title: "CRM e Automações",
       description:
         "Sistemas para organizar leads, clientes e fluxos de trabalho, reduzindo o trabalho manual e melhorando a continuidade operacional.",
-      imageAlt: "Caderno e cartões alinhados sobre uma mesa, ligados por um fio ciano",
+      imageAlt: "Pessoa tocando um painel holográfico de CRM ligado a gráficos, nuvem e documentos",
     },
     saas: {
       title: "Plataformas SaaS",
       description:
         "Produtos multi-tenant e plataformas as-a-service, da estrutura de dados às experiências de uso no dia a dia.",
-      imageAlt: "Escritório modular visto de cima, com uma mesa iluminada em ciano",
+      imageAlt: "Tablet nas mãos com ícones de nuvem, servidores e a palavra SaaS",
     },
     api: {
       title: "Integrações e API",
       description:
         "Conexões entre ferramentas, sincronização de dados e APIs dedicadas para os sistemas do seu ecossistema digital conversarem entre si.",
-      imageAlt: "Esferas de vidro e cubos pretos ligados por fios de luz ciano",
+      imageAlt: "Pessoa no laptop com um painel holográfico da palavra API e ícones de integração",
     },
   },
   carousel: {
@@ -95,10 +95,10 @@ export const ptBR = {
     all: "Portfólio completo",
   },
   agency: {
-    title: "Ideias, estratégia e",
-    highlight: "desenvolvimento.",
+    title: "Tecnologia com propósito: desenvolvendo o amanhã,",
+    highlight: "hoje",
     p1: "Projetamos e desenvolvemos soluções digitais que unem identidade visual, tecnologia e funcionalidade. Cada projeto é construído em torno de objetivos concretos, pessoas reais e possibilidade de crescimento.",
-    p2: "A Logos Agency é um estúdio digital focado em web design, produtos de software, e-commerce e sistemas que fazem o negócio funcionar — não apenas aparecer.",
+    p2: "A Logos Agency é um estúdio digital focado em web design, produtos de software, e\u2011commerce e sistemas que fazem o negócio funcionar — não apenas aparecer.",
     photo1Alt: "Integrante da equipe no estúdio, de pé, com monitores ao fundo",
     photo2Alt: "Integrante da equipe à mesa, sorrindo, com o notebook à frente",
   },
@@ -140,7 +140,7 @@ export const ptBR = {
   projectsPage: {
     title: "Nossos",
     highlight: "trabalhos",
-    text: "Uma seleção de projetos digitais. Atualizada pelo painel de administração.",
+    text: "Sim, fizemos nós, e com muito orgulho.",
     empty: "Nenhum projeto publicado no momento.",
   },
   project: {

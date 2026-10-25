@@ -32,53 +32,53 @@ export const en: Dictionary = {
     whatsapp: "WhatsApp",
   },
   hero: {
-    line1: "Strategy.",
-    line2: "Design.",
-    line3: "Development.",
+    line1: "Your success is our",
+    line2: "architecture.",
     text: "We build tailor-made digital experiences that turn ideas into real products.",
     services: "Explore our services",
     projects: "Browse the projects",
   },
   servicesSection: {
-    title: "Digital,",
-    highlight: "without compromise.",
+    title: "We create software that doesn't just work,",
+    highlight: "but evolves with you.",
+    text: "We design and develop digital solutions that bring together visual identity, technology and functionality. Every project is built around concrete goals, real people and room to grow.",
   },
   services: {
     "web-design": {
       title: "Web Design & Landing Pages",
       description:
         "Editorial interfaces and high-conversion landing pages, built around the brand and the business goals.",
-      imageAlt: "Editorial desk with a laptop, layout grids and a cyan accent",
+      imageAlt: "Blue landing page with a menu, headline and luminous waves",
     },
     ecommerce: {
       title: "E-commerce",
       description:
         "High-performing online stores, with clear UX, reliable checkout and integrations for catalog, payments and logistics.",
-      imageAlt: "Unboxing a product in a black box next to a phone showing the catalog",
+      imageAlt: "Miniature shopping cart on a keyboard, with an online store on the monitor",
     },
     software: {
       title: "Software & Web Apps",
       description:
         "Custom web applications for internal processes or digital products, with scalable architectures and refined interfaces.",
-      imageAlt: "Two monitors with dark interfaces on a glass desk at sunset",
+      imageAlt: "Illustration comparing web applications and a website",
     },
     crm: {
       title: "CRM & Automation",
       description:
         "Systems to organize leads, clients and workflows, reducing manual work and improving operational continuity.",
-      imageAlt: "Notebook and cards lined up on a desk, connected by a cyan thread",
+      imageAlt: "Person touching a holographic CRM panel linked to charts, cloud and documents",
     },
     saas: {
       title: "SaaS Platforms",
       description:
         "Multi-tenant products and as-a-service platforms, from the data structure to everyday user experiences.",
-      imageAlt: "Modular office seen from above, with a cyan-lit desk",
+      imageAlt: "Tablet held in both hands with cloud, server icons and the word SaaS",
     },
     api: {
       title: "Integrations & APIs",
       description:
         "Connections between tools, data sync and dedicated APIs so the systems in your digital ecosystem can talk to each other.",
-      imageAlt: "Glass spheres and black cubes connected by cyan threads of light",
+      imageAlt: "Person at a laptop with a holographic API panel and integration icons",
     },
   },
   carousel: {
@@ -97,10 +97,10 @@ export const en: Dictionary = {
     all: "Full portfolio",
   },
   agency: {
-    title: "Ideas, strategy and",
-    highlight: "development.",
+    title: "Technology with purpose: building tomorrow,",
+    highlight: "today",
     p1: "We design and develop digital solutions that bring together visual identity, technology and functionality. Every project is built around concrete goals, real people and room to grow.",
-    p2: "Logos Agency is a digital studio focused on web design, software products, e-commerce and systems that make the business work — not only look the part.",
+    p2: "Logos Agency is a digital studio focused on web design, software products, e\u2011commerce and systems that make the business work — not only look the part.",
     photo1Alt: "Team member standing in the studio, with monitors in the background",
     photo2Alt: "Team member at the desk, smiling, with a laptop in front",
   },
@@ -142,7 +142,7 @@ export const en: Dictionary = {
   projectsPage: {
     title: "Our",
     highlight: "work",
-    text: "A selection of digital projects. Updated from the admin panel.",
+    text: "Yes, we made them ourselves, and with great pride.",
     empty: "No published projects at the moment.",
   },
   project: {

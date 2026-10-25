@@ -25,20 +25,20 @@ export function Agency() {
     <section id="chi-siamo" className="bg-white text-black">
       <div className="section container-wide">
         <Reveal>
-          <h2 className="display display-lg max-w-[16ch]">
+          <h2 className="display display-lg max-w-[18ch]">
             {t.agency.title} <Highlight>{t.agency.highlight}</Highlight>
           </h2>
         </Reveal>
 
-        <div className="mt-8 grid items-start gap-10 lg:mt-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-x-12 xl:gap-x-16">
-          <div>
+        <div className="mt-8 grid items-start gap-10 lg:mt-10 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:gap-x-16 xl:gap-x-24">
+          <div className="relative z-10 min-w-0">
             <Reveal delay={100}>
-              <p className="max-w-2xl text-base leading-relaxed text-black/70 md:text-lg">
+              <p className="max-w-xl text-base leading-relaxed text-black/70 md:text-lg">
                 {t.agency.p1}
               </p>
             </Reveal>
             <Reveal delay={160}>
-              <p className="mt-6 max-w-2xl text-base leading-relaxed text-black/60">
+              <p className="mt-6 max-w-xl text-base leading-relaxed text-black/60">
                 {t.agency.p2}
               </p>
             </Reveal>

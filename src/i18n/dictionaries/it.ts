@@ -32,53 +32,53 @@ export const it: Dictionary = {
     whatsapp: "WhatsApp",
   },
   hero: {
-    line1: "Strategia.",
-    line2: "Design.",
-    line3: "Sviluppo.",
+    line1: "Il tuo successo è la nostra",
+    line2: "architettura.",
     text: "Costruiamo esperienze digitali su misura per trasformare idee in prodotti concreti.",
     services: "Scopri i nostri servizi",
     projects: "Esplora i progetti",
   },
   servicesSection: {
-    title: "Il digitale,",
-    highlight: "senza compromessi.",
+    title: "Creiamo software che non si limita a funzionare,",
+    highlight: "ma evolve con te.",
+    text: "Progettiamo e sviluppiamo soluzioni digitali che uniscono identità visiva, tecnologia e funzionalità. Ogni progetto è costruito intorno a obiettivi concreti, persone reali e possibilità di crescita.",
   },
   services: {
     "web-design": {
       title: "Web Design & Landing Page",
       description:
         "Interfacce editoriali e landing page ad alta conversione, costruite intorno al brand e agli obiettivi di business.",
-      imageAlt: "Scrivania editoriale con laptop, griglie di layout e un accento ciano",
+      imageAlt: "Landing page blu con menu, titolo e onde luminose",
     },
     ecommerce: {
       title: "E-commerce",
       description:
         "Negozi online performanti, con UX chiara, checkout affidabile e integrazioni per catalogo, pagamenti e logistica.",
-      imageAlt: "Unboxing di un prodotto in una scatola nera accanto a un telefono con catalogo",
+      imageAlt: "Carrello della spesa in miniatura su una tastiera, con un negozio online sul monitor",
     },
     software: {
       title: "Software & Web App",
       description:
         "Applicazioni web custom per processi interni o prodotti digitali, con architetture scalabili e interfacce curate.",
-      imageAlt: "Due monitor con interfacce scure su una scrivania di vetro al tramonto",
+      imageAlt: "Illustrazione che confronta applicazioni web e un sito",
     },
     crm: {
       title: "CRM & Automazioni",
       description:
         "Sistemi per organizzare lead, clienti e workflow, riducendo lavoro manuale e migliorando la continuità operativa.",
-      imageAlt: "Taccuino e schede allineate su una scrivania, collegate da un filo ciano",
+      imageAlt: "Persona che tocca un pannello olografico CRM collegato a grafici, cloud e documenti",
     },
     saas: {
       title: "Piattaforme SaaS",
       description:
         "Prodotti multi-tenant e piattaforme as-a-service, dalla struttura dati alle esperienze utente quotidiane.",
-      imageAlt: "Ufficio modulare visto dall'alto, con una scrivania illuminata di ciano",
+      imageAlt: "Tablet tra le mani con icone di cloud, server e la parola SaaS",
     },
     api: {
       title: "Integrazioni & API",
       description:
         "Collegamenti tra strumenti, sync dati e API dedicate per far dialogare i sistemi del tuo ecosistema digitale.",
-      imageAlt: "Sfere di vetro e cubi neri collegati da fili di luce ciano",
+      imageAlt: "Persona al laptop con un pannello olografico API e icone di integrazione",
     },
   },
   carousel: {
@@ -97,10 +97,10 @@ export const it: Dictionary = {
     all: "Portfolio completo",
   },
   agency: {
-    title: "Idee, strategia e",
-    highlight: "sviluppo.",
+    title: "Tecnologia con uno scopo: sviluppando il domani,",
+    highlight: "oggi",
     p1: "Progettiamo e sviluppiamo soluzioni digitali che uniscono identità visiva, tecnologia e funzionalità. Ogni progetto è costruito intorno a obiettivi concreti, persone reali e possibilità di crescita.",
-    p2: "Logos Agency è uno studio digitale focalizzato su web design, prodotti software, e-commerce e sistemi che fanno funzionare il business — non solo apparire.",
+    p2: "Logos Agency è uno studio digitale focalizzato su web design, prodotti software, e\u2011commerce e sistemi che fanno funzionare il business — non solo apparire.",
     photo1Alt: "Membro del team in piedi nello studio, con i monitor sullo sfondo",
     photo2Alt: "Membro del team alla scrivania, sorridente, con il laptop davanti",
   },
@@ -142,7 +142,7 @@ export const it: Dictionary = {
   projectsPage: {
     title: "I nostri",
     highlight: "lavori",
-    text: "Una selezione di progetti digitali. Aggiornata dal pannello di amministrazione.",
+    text: "Sì, li abbiamo fatti noi, e con molto orgoglio.",
     empty: "Nessun progetto pubblicato al momento.",
   },
   project: {
