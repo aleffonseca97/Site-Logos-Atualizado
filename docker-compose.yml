@@ -1,0 +1,40 @@
+services:
+  web:
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+        NEXT_PUBLIC_WHATSAPP: ${NEXT_PUBLIC_WHATSAPP:-393283634905}
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: file:/data/logos.db
+      AUTH_SECRET: ${AUTH_SECRET:-change-me-before-first-start}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-admin@logosagency.it}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-ChangeMeNow!2026}
+      CONTACT_EMAIL: ${CONTACT_EMAIL:-logosdev.agency@gmail.com}
+      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+      NEXT_PUBLIC_WHATSAPP: ${NEXT_PUBLIC_WHATSAPP:-393283634905}
+      PORT: "3000"
+      HOSTNAME: 0.0.0.0
+    volumes:
+      - logos-data:/data
+      - logos-uploads:/app/public/uploads
+    restart: unless-stopped
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:3000').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+
+volumes:
+  logos-data:
+  logos-uploads:

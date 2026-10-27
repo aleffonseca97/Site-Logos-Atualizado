@@ -280,7 +280,12 @@ select {
   width: max-content;
   gap: clamp(4.5rem, 8vw, 8rem);
   align-items: center;
-  animation: marquee var(--marquee-duration, 48s) linear infinite;
+  animation: marquee var(--marquee-duration, 36s) linear infinite;
+}
+
+.marquee-logo {
+  filter: grayscale(1) contrast(1.08);
+  opacity: 0.92;
 }
 
 .marquee:hover .marquee-track {

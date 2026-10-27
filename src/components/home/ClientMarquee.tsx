@@ -31,7 +31,7 @@ export function ClientMarquee({
       <div className={`marquee ${shouldAnimate ? "" : "marquee-static"}`}>
         <ul
           className="marquee-track list-none"
-          style={shouldAnimate ? { animationDuration: `${Math.max(sequence.length * 5, 32)}s` } : undefined}
+          style={shouldAnimate ? { animationDuration: `${Math.max(sequence.length * 4, 24)}s` } : undefined}
           aria-hidden={shouldAnimate ? true : undefined}
         >
           {loop.map((client, index) => {
@@ -43,7 +43,8 @@ export function ClientMarquee({
                     alt=""
                     width={240}
                     height={80}
-                    className="h-14 w-auto max-w-[15rem] object-contain opacity-90 md:h-20 md:max-w-[18rem]"
+                    className="marquee-logo h-14 w-auto max-w-[15rem] object-contain md:h-20 md:max-w-[18rem]"
+                    style={{ width: "auto" }}
                   />
                 ) : (
                   <span className="text-sm uppercase tracking-[0.18em] text-white/55">
