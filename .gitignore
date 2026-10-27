@@ -37,10 +37,10 @@ yarn-error.log*
 !.env.example
 
 # local database & uploads
-/prisma/*.db
-/prisma/*.db-journal
-/public/uploads/*
-!/public/uploads/.gitkeep
+# /prisma/*.db
+# /prisma/*.db-journal
+# /public/uploads/*
+# !/public/uploads/.gitkeep
 /storage
 
 # vercel
