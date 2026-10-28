@@ -34,9 +34,9 @@ export const en: Dictionary = {
   hero: {
     line1: "Your success is our",
     line2: "architecture.",
-    text: "We build tailor-made digital experiences that turn ideas into real products.",
-    services: "Explore our services",
-    projects: "Browse the projects",
+    text: "Clean code, clear results.",
+    services: "See our services",
+    projects: "See the projects",
   },
   servicesSection: {
     title: "We create software that doesn't just work,",
@@ -48,37 +48,37 @@ export const en: Dictionary = {
       title: "Web Design & Landing Pages",
       description:
         "Editorial interfaces and high-conversion landing pages, built around the brand and the business goals.",
-      imageAlt: "Blue landing page with a menu, headline and luminous waves",
+      imageAlt: "Laptop and phone showing the Logos landing page",
     },
     ecommerce: {
       title: "E-commerce",
       description:
         "High-performing online stores, with clear UX, reliable checkout and integrations for catalog, payments and logistics.",
-      imageAlt: "Miniature shopping cart on a keyboard, with an online store on the monitor",
+      imageAlt: "Laptop and phone showing the store with a featured watch",
     },
     software: {
       title: "Software & Web Apps",
       description:
         "Custom web applications for internal processes or digital products, with scalable architectures and refined interfaces.",
-      imageAlt: "Illustration comparing web applications and a website",
+      imageAlt: "Laptop with a project dashboard and a phone showing code",
     },
     crm: {
       title: "CRM & Automation",
       description:
         "Systems to organize leads, clients and workflows, reducing manual work and improving operational continuity.",
-      imageAlt: "Person touching a holographic CRM panel linked to charts, cloud and documents",
+      imageAlt: "Laptop with a sales funnel and a phone with CRM automations",
     },
     saas: {
       title: "SaaS Platforms",
       description:
         "Multi-tenant products and as-a-service platforms, from the data structure to everyday user experiences.",
-      imageAlt: "Tablet held in both hands with cloud, server icons and the word SaaS",
+      imageAlt: "Laptop with subscription metrics and a phone showing the SaaS platform",
     },
     api: {
       title: "Integrations & APIs",
       description:
         "Connections between tools, data sync and dedicated APIs so the systems in your digital ecosystem can talk to each other.",
-      imageAlt: "Person at a laptop with a holographic API panel and integration icons",
+      imageAlt: "Laptop with connected integrations and a phone listing APIs",
     },
   },
   carousel: {
@@ -92,7 +92,7 @@ export const en: Dictionary = {
   works: {
     title: "Our",
     highlight: "work",
-    text: "A selection of projects for brands that chose to grow through digital.",
+    text: "Take a look at the projects we've built for companies that trust us.",
     empty: "Published projects will appear here. Add them from the admin panel.",
     all: "Full portfolio",
   },
@@ -100,9 +100,10 @@ export const en: Dictionary = {
     title: "Technology with purpose: building tomorrow,",
     highlight: "today",
     p1: "We design and develop digital solutions that bring together visual identity, technology and functionality. Every project is built around concrete goals, real people and room to grow.",
-    p2: "Logos Agency is a digital studio focused on web design, software products, e\u2011commerce and systems that make the business work — not only look the part.",
+    p2: "Logos Agency is a digital studio focused on web design, software products, e\u2011commerce, and systems that make the business actually work — not just look good.",
     photo1Alt: "Team member standing in the studio, with monitors in the background",
     photo2Alt: "Team member at the desk, smiling, with a laptop in front",
+    role: "CEO and developer",
   },
   contact: {
     title: "Request a consultation",
@@ -134,7 +135,7 @@ export const en: Dictionary = {
     portfolio: "Portfolio",
     contact: "Contact",
     privacy: "Privacy",
-    vat: "VAT",
+    vat: "CNPJ",
     legalFallback: "Legal details will appear here after they are set in the admin panel.",
     rights: "All rights reserved.",
     tagline: "Tailor-made digital development",
@@ -142,7 +143,7 @@ export const en: Dictionary = {
   projectsPage: {
     title: "Our",
     highlight: "work",
-    text: "Yes, we made them ourselves, and with great pride.",
+    text: "Yes, we built them ourselves — and we're proud of it.",
     empty: "No published projects at the moment.",
   },
   project: {
@@ -289,7 +290,7 @@ export const en: Dictionary = {
       tiktok: "TikTok URL",
       legalName: "Legal name",
       address: "Address",
-      vat: "VAT",
+      vat: "CNPJ",
       marquee: "Enable logo strip",
       autoplay: "Automatic animation",
       save: "Save settings",

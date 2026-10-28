@@ -34,51 +34,51 @@ export const it: Dictionary = {
   hero: {
     line1: "Il tuo successo è la nostra",
     line2: "architettura.",
-    text: "Costruiamo esperienze digitali su misura per trasformare idee in prodotti concreti.",
+    text: "Codice pulito, risultati chiari.",
     services: "Scopri i nostri servizi",
-    projects: "Esplora i progetti",
+    projects: "Vedi i progetti",
   },
   servicesSection: {
     title: "Creiamo software che non si limita a funzionare,",
     highlight: "ma evolve con te.",
-    text: "Progettiamo e sviluppiamo soluzioni digitali che uniscono identità visiva, tecnologia e funzionalità. Ogni progetto è costruito intorno a obiettivi concreti, persone reali e possibilità di crescita.",
+    text: "Progettiamo e sviluppiamo soluzioni digitali che uniscono identità visiva, tecnologia e funzionalità. Ogni progetto è pensato intorno a obiettivi concreti, persone reali e alla possibilità di crescere.",
   },
   services: {
     "web-design": {
       title: "Web Design & Landing Page",
       description:
-        "Interfacce editoriali e landing page ad alta conversione, costruite intorno al brand e agli obiettivi di business.",
-      imageAlt: "Landing page blu con menu, titolo e onde luminose",
+        "Interfacce editoriali e landing page ad alta conversione, pensate sul brand e sugli obiettivi di business.",
+      imageAlt: "Laptop e telefono con la landing page Logos",
     },
     ecommerce: {
       title: "E-commerce",
       description:
         "Negozi online performanti, con UX chiara, checkout affidabile e integrazioni per catalogo, pagamenti e logistica.",
-      imageAlt: "Carrello della spesa in miniatura su una tastiera, con un negozio online sul monitor",
+      imageAlt: "Laptop e telefono con il negozio e un orologio in evidenza",
     },
     software: {
       title: "Software & Web App",
       description:
-        "Applicazioni web custom per processi interni o prodotti digitali, con architetture scalabili e interfacce curate.",
-      imageAlt: "Illustrazione che confronta applicazioni web e un sito",
+        "Applicazioni web su misura per processi interni o prodotti digitali, con architetture scalabili e interfacce curate.",
+      imageAlt: "Laptop con dashboard dei progetti e telefono con codice",
     },
     crm: {
       title: "CRM & Automazioni",
       description:
         "Sistemi per organizzare lead, clienti e workflow, riducendo lavoro manuale e migliorando la continuità operativa.",
-      imageAlt: "Persona che tocca un pannello olografico CRM collegato a grafici, cloud e documenti",
+      imageAlt: "Laptop con funnel di vendita e telefono con automazioni CRM",
     },
     saas: {
       title: "Piattaforme SaaS",
       description:
         "Prodotti multi-tenant e piattaforme as-a-service, dalla struttura dati alle esperienze utente quotidiane.",
-      imageAlt: "Tablet tra le mani con icone di cloud, server e la parola SaaS",
+      imageAlt: "Laptop con metriche di abbonamento e telefono della piattaforma SaaS",
     },
     api: {
       title: "Integrazioni & API",
       description:
         "Collegamenti tra strumenti, sync dati e API dedicate per far dialogare i sistemi del tuo ecosistema digitale.",
-      imageAlt: "Persona al laptop con un pannello olografico API e icone di integrazione",
+      imageAlt: "Laptop con integrazioni collegate e telefono con l'elenco delle API",
     },
   },
   carousel: {
@@ -92,21 +92,22 @@ export const it: Dictionary = {
   works: {
     title: "I nostri",
     highlight: "lavori",
-    text: "Una selezione di progetti realizzati per brand che hanno scelto di crescere attraverso il digitale.",
+    text: "Dai un'occhiata ai progetti che abbiamo realizzato per le aziende che si fidano di noi.",
     empty: "I progetti pubblicati appariranno qui. Caricali dal pannello admin.",
     all: "Portfolio completo",
   },
   agency: {
-    title: "Tecnologia con uno scopo: sviluppando il domani,",
+    title: "Tecnologia con uno scopo: costruiamo il domani,",
     highlight: "oggi",
-    p1: "Progettiamo e sviluppiamo soluzioni digitali che uniscono identità visiva, tecnologia e funzionalità. Ogni progetto è costruito intorno a obiettivi concreti, persone reali e possibilità di crescita.",
-    p2: "Logos Agency è uno studio digitale focalizzato su web design, prodotti software, e\u2011commerce e sistemi che fanno funzionare il business — non solo apparire.",
+    p1: "Progettiamo e sviluppiamo soluzioni digitali che uniscono identità visiva, tecnologia e funzionalità. Ogni progetto è pensato intorno a obiettivi concreti, persone reali e alla possibilità di crescere.",
+    p2: "Logos Agency è uno studio digitale focalizzato su web design, prodotti software, e\u2011commerce e sistemi pensati per far funzionare il business, non solo per farlo apparire.",
     photo1Alt: "Membro del team in piedi nello studio, con i monitor sullo sfondo",
     photo2Alt: "Membro del team alla scrivania, sorridente, con il laptop davanti",
+    role: "CEO e sviluppatore",
   },
   contact: {
     title: "Richiedi una consulenza",
-    text: "Raccontaci il tuo progetto. Analizziamo insieme le esigenze e individuiamo la soluzione più adatta al tuo business.",
+    text: "Raccontaci il tuo progetto. Insieme capiamo cosa ti serve e troviamo la soluzione giusta per il tuo business.",
     name: "Nome",
     email: "Email",
     company: "Azienda (opzionale)",
@@ -115,7 +116,7 @@ export const it: Dictionary = {
     description: "Descrizione",
     consent: "Acconsento al trattamento dei dati per essere ricontattato in merito alla richiesta.",
     sending: "Invio in corso...",
-    submit: "Scrivici ora",
+    submit: "Scrivici",
     success: "Messaggio inviato. Ti risponderemo al più presto.",
   },
   projectTypes: {
@@ -134,7 +135,7 @@ export const it: Dictionary = {
     portfolio: "Portfolio",
     contact: "Contatti",
     privacy: "Privacy",
-    vat: "P.IVA",
+    vat: "CNPJ",
     legalFallback: "Informazioni legali disponibili dopo la configurazione nel pannello admin.",
     rights: "Tutti i diritti riservati.",
     tagline: "Sviluppo digitale su misura",
@@ -142,7 +143,7 @@ export const it: Dictionary = {
   projectsPage: {
     title: "I nostri",
     highlight: "lavori",
-    text: "Sì, li abbiamo fatti noi, e con molto orgoglio.",
+    text: "Sì, li abbiamo fatti noi. E ne siamo orgogliosi.",
     empty: "Nessun progetto pubblicato al momento.",
   },
   project: {
@@ -289,7 +290,7 @@ export const it: Dictionary = {
       tiktok: "TikTok URL",
       legalName: "Ragione sociale",
       address: "Indirizzo",
-      vat: "P.IVA",
+      vat: "CNPJ",
       marquee: "Abilita fascia loghi",
       autoplay: "Animazione automatica",
       save: "Salva impostazioni",

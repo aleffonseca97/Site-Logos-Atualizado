@@ -9,11 +9,13 @@ const portraits = [
   {
     src: "/studio/equipe-estudio.jpg",
     altKey: "photo1Alt",
+    name: "Alef",
     className: "mt-8 sm:mt-10 lg:mt-14",
   },
   {
     src: "/studio/equipe-mesa.jpg",
     altKey: "photo2Alt",
+    name: "Henrique",
     className: "",
   },
 ] as const;
@@ -38,7 +40,7 @@ export function Agency() {
               </p>
             </Reveal>
             <Reveal delay={160}>
-              <p className="mt-6 max-w-xl text-base leading-relaxed text-black/60">
+              <p className="mt-6 max-w-xl text-base leading-relaxed text-black/60 [font-kerning:none]">
                 {t.agency.p2}
               </p>
             </Reveal>
@@ -58,6 +60,14 @@ export function Agency() {
                       className="object-cover object-[center_18%]"
                     />
                   </div>
+                  <figcaption className="mt-3 text-center">
+                    <p className="font-sans text-base font-bold uppercase leading-tight text-black sm:text-lg">
+                      {photo.name}
+                    </p>
+                    <p className="mt-1 font-sans text-xs leading-snug text-black/60 sm:text-sm">
+                      {t.agency.role}
+                    </p>
+                  </figcaption>
                 </figure>
               ))}
             </div>

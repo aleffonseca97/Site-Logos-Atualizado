@@ -46,37 +46,37 @@ export const ptBR = {
       title: "Web Design e Landing Page",
       description:
         "Interfaces editoriais e landing pages de alta conversão, construídas em torno da marca e dos objetivos de negócio.",
-      imageAlt: "Landing page azul com menu, título e ondas luminosas",
+      imageAlt: "Laptop e celular exibindo a landing page da Logos",
     },
     ecommerce: {
       title: "E-commerce",
       description:
         "Lojas online de alto desempenho, com UX clara, checkout confiável e integrações de catálogo, pagamentos e logística.",
-      imageAlt: "Carrinho de compras em miniatura sobre um teclado, com uma loja online no monitor",
+      imageAlt: "Laptop e celular exibindo a loja com um relógio em destaque",
     },
     software: {
       title: "Software e Web App",
       description:
         "Aplicações web sob medida para processos internos ou produtos digitais, com arquiteturas escaláveis e interfaces cuidadas.",
-      imageAlt: "Ilustração comparando aplicações web e um site",
+      imageAlt: "Laptop com dashboard de projetos e celular com código",
     },
     crm: {
       title: "CRM e Automações",
       description:
         "Sistemas para organizar leads, clientes e fluxos de trabalho, reduzindo o trabalho manual e melhorando a continuidade operacional.",
-      imageAlt: "Pessoa tocando um painel holográfico de CRM ligado a gráficos, nuvem e documentos",
+      imageAlt: "Laptop com funil de vendas e celular com automações de CRM",
     },
     saas: {
       title: "Plataformas SaaS",
       description:
         "Produtos multi-tenant e plataformas as-a-service, da estrutura de dados às experiências de uso no dia a dia.",
-      imageAlt: "Tablet nas mãos com ícones de nuvem, servidores e a palavra SaaS",
+      imageAlt: "Laptop com métricas de assinaturas e celular da plataforma SaaS",
     },
     api: {
       title: "Integrações e API",
       description:
         "Conexões entre ferramentas, sincronização de dados e APIs dedicadas para os sistemas do seu ecossistema digital conversarem entre si.",
-      imageAlt: "Pessoa no laptop com um painel holográfico da palavra API e ícones de integração",
+      imageAlt: "Laptop com integrações conectadas e celular com a lista de APIs",
     },
   },
   carousel: {
@@ -90,7 +90,7 @@ export const ptBR = {
   works: {
     title: "Nossos",
     highlight: "trabalhos",
-    text: "Uma seleção de projetos realizados para marcas que escolheram crescer por meio do digital.",
+    text: "Confira os projetos que realizamos para empresas que confiam na gente.",
     empty: "Os projetos publicados aparecerão aqui. Envie-os pelo painel admin.",
     all: "Portfólio completo",
   },
@@ -101,6 +101,7 @@ export const ptBR = {
     p2: "A Logos Agency é um estúdio digital focado em web design, produtos de software, e\u2011commerce e sistemas que fazem o negócio funcionar — não apenas aparecer.",
     photo1Alt: "Integrante da equipe no estúdio, de pé, com monitores ao fundo",
     photo2Alt: "Integrante da equipe à mesa, sorrindo, com o notebook à frente",
+    role: "CEO e desenvolvedor",
   },
   contact: {
     title: "Solicite uma consultoria",

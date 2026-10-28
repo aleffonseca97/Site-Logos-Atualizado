@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Highlight } from "@/components/ui/Highlight";
 import { Reveal } from "@/components/motion/Reveal";
+import { ClientMarquee } from "@/components/home/ClientMarquee";
 import { useI18n } from "@/i18n/I18nProvider";
 
 type ProjectCard = {
@@ -52,11 +53,19 @@ function tileClass(index: number, total: number) {
   return MOSAIC_CYCLE[index % MOSAIC_CYCLE.length];
 }
 
-export function Works({ projects }: { projects: ProjectCard[] }) {
+export function Works({
+  projects,
+  showMarquee = false,
+}: {
+  projects: ProjectCard[];
+  showMarquee?: boolean;
+}) {
   const { t } = useI18n();
 
   return (
-    <section id="lavori" className="section bg-black">
+    <section id="lavori" className={showMarquee ? "bg-black" : "section bg-black"}>
+      {showMarquee ? <ClientMarquee /> : null}
+      <div className={showMarquee ? "section works-below-marquee" : undefined}>
       <div className="container-wide">
         <Reveal>
           <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between lg:gap-16">
@@ -109,6 +118,7 @@ export function Works({ projects }: { projects: ProjectCard[] }) {
             {t.works.all}
           </Button>
         </div>
+      </div>
       </div>
     </section>
   );

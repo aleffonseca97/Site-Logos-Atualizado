@@ -68,7 +68,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-black pb-16 pt-28 md:pb-24 md:pt-36">
+    <section className="hero-screen relative overflow-hidden bg-black">
       <div className="pointer-events-none absolute inset-0 z-0" aria-hidden>
         <picture>
           <source media="(min-width: 768px)" srcSet={DESKTOP_POSTER} />
