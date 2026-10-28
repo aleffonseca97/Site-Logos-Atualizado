@@ -6,7 +6,7 @@ services:
         NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
         NEXT_PUBLIC_WHATSAPP: ${NEXT_PUBLIC_WHATSAPP:-393283634905}
     ports:
-      - "${PORT:-3000}:3000"
+      - '${PORT:-2500}:2500'
     environment:
       NODE_ENV: production
       DATABASE_URL: file:/data/logos.db
@@ -16,7 +16,7 @@ services:
       CONTACT_EMAIL: ${CONTACT_EMAIL:-logosdev.agency@gmail.com}
       NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
       NEXT_PUBLIC_WHATSAPP: ${NEXT_PUBLIC_WHATSAPP:-393283634905}
-      PORT: "3000"
+      PORT: '2500'
       HOSTNAME: 0.0.0.0
     volumes:
       - logos-data:/data
@@ -25,10 +25,10 @@ services:
     healthcheck:
       test:
         [
-          "CMD",
-          "node",
-          "-e",
-          "fetch('http://127.0.0.1:3000').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+          'CMD',
+          'node',
+          '-e',
+          "fetch('http://127.0.0.1:2500').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
         ]
       interval: 30s
       timeout: 10s
