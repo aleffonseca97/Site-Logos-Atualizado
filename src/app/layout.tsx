@@ -49,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
       images: ["/brand/logo-icon.jpg"],
     },
     icons: {
-      icon: "/brand/logo-icon.jpg",
+      icon: [{ url: "/brand/favicon.ico", type: "image/x-icon" }],
       apple: "/brand/logo-icon.jpg",
     },
   };
