@@ -46,15 +46,17 @@ export function Header({ whatsapp }: Props) {
           <Logo priority />
 
           <nav className="hidden items-center gap-6 lg:flex xl:gap-8" aria-label={t.nav.main}>
-            {navItems.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="nav-link text-sm tracking-wide text-white/80 transition-colors hover:text-white"
-              >
-                {t.nav[link.key]}
-              </Link>
-            ))}
+            {navItems
+              .filter((link) => link.key !== "contact")
+              .map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="nav-link text-sm tracking-wide text-white/80 transition-colors hover:text-white"
+                >
+                  {t.nav[link.key]}
+                </Link>
+              ))}
             <LanguageSwitcher />
             <Link href="/#contatti" className="pill-btn pill-btn-white !min-h-11 !px-5 !text-sm">
               {t.header.contact}

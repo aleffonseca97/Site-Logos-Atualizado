@@ -130,10 +130,6 @@ select {
   padding-inline: var(--page-x);
 }
 
-.works-below-marquee {
-  padding-top: clamp(1.75rem, 3.5vw, 2.75rem);
-}
-
 .section-tight {
   padding-block: clamp(3rem, 6vw, 5rem);
   padding-inline: var(--page-x);

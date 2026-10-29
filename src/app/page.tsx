@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/home/Hero";
+import { ClientMarquee } from "@/components/home/ClientMarquee";
 import { Services } from "@/components/home/Services";
 import { Works } from "@/components/home/Works";
 import { Agency } from "@/components/home/Agency";
@@ -20,8 +21,9 @@ export default async function HomePage() {
       <Header whatsapp={settings.whatsapp} />
       <main>
         <Hero />
+        {settings.marqueeEnabled ? <ClientMarquee /> : null}
         <Services />
-        <Works projects={homeProjects} showMarquee={settings.marqueeEnabled} />
+        <Works projects={homeProjects} />
         <Agency />
         <Contact />
       </main>
