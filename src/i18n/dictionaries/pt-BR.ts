@@ -12,6 +12,10 @@ export const ptBR = {
   language: {
     label: "Idioma",
   },
+  intro: {
+    label: "Introdução da Logos",
+    skip: "Pular",
+  },
   nav: {
     home: "Início",
     services: "Serviços",
@@ -114,7 +118,7 @@ export const ptBR = {
     description: "Descrição",
     consent: "Autorizo o tratamento dos dados para ser contatado sobre esta solicitação.",
     sending: "Enviando...",
-    submit: "Escreva para nós",
+    submit: "Enviar",
     success: "Mensagem enviada. Responderemos o mais breve possível.",
   },
   projectTypes: {

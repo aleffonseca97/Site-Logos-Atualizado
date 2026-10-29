@@ -7,6 +7,7 @@ import { dictionaries } from "@/i18n/dictionaries";
 import { getLocale } from "@/i18n/get-locale";
 import { I18nProvider } from "@/i18n/I18nProvider";
 import { htmlLang, LOCALE_COOKIE, ogLocale } from "@/i18n/locale";
+import { SiteIntro } from "@/components/layout/SiteIntro";
 
 const display = Archivo_Narrow({
   subsets: ["latin"],
@@ -67,7 +68,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     >
       <body className="min-h-full bg-black text-white">
         <I18nProvider initialLocale={locale} hasCookie={store.has(LOCALE_COOKIE)}>
-          {children}
+          <SiteIntro />
+          <div id="site-content">{children}</div>
         </I18nProvider>
       </body>
     </html>

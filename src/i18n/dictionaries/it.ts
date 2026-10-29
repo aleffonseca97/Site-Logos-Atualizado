@@ -14,6 +14,10 @@ export const it: Dictionary = {
   language: {
     label: "Lingua",
   },
+  intro: {
+    label: "Introduzione Logos",
+    skip: "Salta",
+  },
   nav: {
     home: "Home",
     services: "Servizi",
@@ -116,7 +120,7 @@ export const it: Dictionary = {
     description: "Descrizione",
     consent: "Acconsento al trattamento dei dati per essere ricontattato in merito alla richiesta.",
     sending: "Invio in corso...",
-    submit: "Scrivici",
+    submit: "Invia",
     success: "Messaggio inviato. Ti risponderemo al più presto.",
   },
   projectTypes: {
